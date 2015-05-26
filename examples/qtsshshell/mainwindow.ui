@@ -64,6 +64,13 @@
             </property>
            </widget>
           </item>
+          <item>
+           <widget class="QPushButton" name="pushclose">
+            <property name="text">
+             <string>断开</string>
+            </property>
+           </widget>
+          </item>
          </layout>
         </item>
        </layout>

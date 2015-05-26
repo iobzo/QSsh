@@ -17,11 +17,21 @@ class MainWindow : public QMainWindow
 public:
     explicit MainWindow(QWidget *parent = 0);
     ~MainWindow();
-
+protected:
+    bool eventFilter(QObject *, QEvent *);
 public slots:
     void on_pushcon_clicked();
     void on_pushsend_clicked();
     void sshcon();
+
+    void started();
+    void readAllStandard();
+    void readAll();
+    void stop();
+    void disconnected();
+
+private slots:
+    void on_pushclose_clicked();
 
 private:
     Ui::MainWindow *ui;
